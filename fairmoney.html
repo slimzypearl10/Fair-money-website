@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Fairmoneyweb</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='fairmoney.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header class="header-main">
+        <div class="logo">
+            <img src="fairmoney images/fairmoney-logo_new.webp" alt="">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="">Our Company</a></li>
+                <li><a href="">Products 
+                </a></li>
+                <li><a href="">Calculator</a></li>
+                <li><a href="">News & Updates</a></li>
+                <li><a href="">FAQ
+                    <button class="flags">
+                        <img src="fairmoney images/nig flag image.png" alt="">
+                   </button></a></li>
+                
+            </ul>
+
+           
+        </nav>
+
+
+         <button class="btn">Contact Us</button>
+    </header>
+
+    <header class="header-mini">
+        <div class="mini-logo">
+            <img src="fairmoney images/fairmoney-logo_new.webp" alt="">
+        </div>
+        <div class="hamburger">
+        <li>
+            <button onclick="menuToggle(this)"><img src="fairmoney images/download (1)ham.png" alt="Menu">
+            </button>
+        </li>
+        </div>
+
+        <ul class="mobile-menu " >
+            <img src="fairmoney images/fairmoney-logo_new.webp" alt="">
+            <li>
+                <button onclick="closeToggle(this)">
+                    <img src="fairmoney images/close toggle.png" alt="">
+                </button>
+            </li>
+
+
+            <li><a href="">Our Company</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Calculator</a></li>
+            <li><a href="">New & Updates</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Select Country:</a></li>
+            <li><a href="">Contact Us</a></li>
+            <button></button>
+        </ul>
+    </header>
+
+
+
+    <script>
+        const navbar = document.querySelector('.mobile-menu');
+        
+        function menuToggle(button) {
+            navbar.classList.add("active");
+            button.classList.add('active');
+            document.body.classList.add('active')
+
+            const ul = document.getElementsByClassName("mobile-menu")
+            ul.style.padding("20px")
+            
+        }
+
+        
+
+        function closeToggle(){
+            navbar.classList.remove("active");
+            document.querySelector('.hamburger button').classList.remove('active');
+            document.body.classList.remove('active')
+        }
+    </script>
+
+
+<div class="hero">
+<div class="hero-1">
+    <div class="hero-text">
+        <h1>We are building the mobile bank for the next 2 Billion.</h1>
+
+        <p>FairMoney Microfinance Bank is the number 1 most downloaded fintech app in Nigeria. With over 10,000 daily loan disbursements, and over 5 million users enjoying banking, savings, and investment services, FairMoney helps the average Nigerian access finance tools to take control of both their life and their finances.
+        </p>
+        
+    </div>
+
+    <div class="image-left">
+        <img src="fairmoney images/home.b39e4e5.webp" alt="">
+    </div>
+
+    <div class="image-right"><img src="fairmoney images/mock-hero-right.21d5a5e.png" alt=""></div>
+
+    
+    <div class="app">
+        <img src="fairmoney images/google-play-badge-1.3b465ba.svg" alt="">
+        <img src="fairmoney images/apple-download.5e699b6.svg" alt="">
+    </div>
+
+
+</div>
+</div>
+    <div class="liens">
+        <p>Licensed by</p>
+        <p>Deposits Insured by</p>
+    </div>
+<div class="logo-con">
+    
+    <div class="logo-l">
+        
+        <div class="l">
+            <img src="fairmoney images/hero-license-icon.svg" alt="">
+        <img src="fairmoney images/bg centtral bank of nigeria.png" alt="">
+        </div>
+
+        <div class="o"><img src="fairmoney images/hero-insurance-icon mark.svg" alt="">
+            <img src="fairmoney images/ndic-logo.webp" alt=""></div>
+        
+    </div>
+
+    <div class="logo-r">
+        <button class="scan">
+            <img src="fairmoney images/WebsiteQR_QR-code (1).jpeg" alt="">
+            <p>Scan the QR code with your phone camera to download the FairMoney app.</p>
+        </button>
+    </div>
+</div>
+
+<div class="trust">
+    <div class="trust-con">
+        <h1>Trusted by millions of users in Nigeria</h1>
+        <p>A customer base of over 5 million is a testament to the growing adoption of FairMoney's fintech solutions among Nigerians.</p>
+    </div>
+
+    <button class="box-1">
+        <p>APP DOWNLOADS</p>
+        <h1>20</h1>
+        <h2>MILLION+</h2>
+        <img src="fairmoney images/apps-download__purple line.svg" alt="">
+    </button>
+
+
+    <button class="box-2">
+        <img src="fairmoney images/daily-loans__green line.svg" alt="">
+        <p>OVER</p>
+        <h1>15,000</h1>
+        <h2>LOANS DISBURSED PER DAY</h2>
+        
+    </button>
+
+</div>
+
+
+<div class="trust-2">
+    <button class="box-3">
+    <img src="fairmoney images/daily-loans__green line.svg" alt="">
+    <p>MORE THAN</p>
+    <h1>₦35+ Billion</h1>
+    <h2>SAVED WITH FAIRMONEY</h2>
+</button>
+
+
+
+
+<button class="box-4">
+    <p>LOANS PROCESSED IN</p>
+    <img src="fairmoney images/loans-proccessed__orange line.svg" alt="">
+    <h1> <span style="color: #d18660;  font-size: 7rem;">5</span>MINUTES</h1>
+</button>
+
+
+<button class="box-5">
+    <img src="fairmoney images/money-saved__blue line.svg" alt="">
+    <p>OVER</p>
+    <h1>210,000</h1>
+    <h2>MONTHLY CARD TRANSACTIONS</h2>
+</button>
+</div>
+
+  <div class="slider">
+    <div class="slider-text">
+        <h1>
+            Products that meet all your life goals
+        </h1>
+    </div>
+  </div>
+<div class="car"><div class="carousel">
+    
+    <div class="carousel-1">
+        <div class="carousel-text-1">
+            <h1>Personal Loans</h1>
+            <p>You can now access quick loans of up to ₦3,000,000 in 5 mins, no collaterals & easy repayment terms!</p>
+            <button class="btn-1">
+                Learn More
+            </button>
+            <img src="fairmoney images/Loan_70c5f69dec_ecc302ab79.png" alt="">
+        </div>
+        
+    </div>
+
+    <div class="carousel-2">
+        <div class="carousel-text-2">
+            <h1>Business Loans</h1>
+            <p>Take your business to the next level with up to ₦5,000,000 FairMoney SME loans.</p>
+            <button class="btn-2">Learn More</button>
+            <img src="fairmoney images/6410d82a51fa022e91623445_mock_business_loans_p_500_ee3ad3893e_daad62469e_e5c6ac07b1.webp" alt="">
+        </div>
+    </div>
+
+
+    <div class="carousel-3">
+        <div class="carousel-text-3">
+            <h1>FairLock</h1>
+            <p>Achieve your goals faster with FairLock (Fixed term deposits) & earn up to 28% interest P.A.
+
+            </p>
+
+            <button class="btn-3">Learn More</button>
+            <img src="fairmoney images/Asset_3_572133ac6c_e823ed3cc8.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="carousel-4">
+        <div class="carousel-text-4">
+            <h1>Cards</h1>
+            <p>Earn 2% cash back whenever you use your FairMoney ATM card</p>
+            <button class="btn-4">Learn More</button>
+            <img src="fairmoney images/fair_save_3b41de5425.svg" alt="">
+        </div>
+    </div>
+
+
+
+    <div class="carousel-5">
+        <div class="carousel-text-5">
+            <h1>Bank Account</h1>
+            <p>FairMoney offers you high savings interests, discounts on airtime/data, no charges on bills, and much more!</p>
+            <button class="btn-5">Learn More</button>
+            <img src="fairmoney images/6410d8298d2467e267a2f9fc_mock_cards_b4a526e1b8_bba931a96e_694645dcac.webp" alt="">
+        </div>
+    </div>
+
+    <div class="carousel-6">
+        <div class="carousel-text-6">
+            <h1>Bill Payment</h1>
+            <p>Pay Your Bills with Ease (Enjoy 3% discount and zero transaction fees)</p>
+            <button class="btn-6">Learn More</button>
+            <img src="fairmoney images/6410d82ac0fdb573a00f2a8f_mock_bill_payment_p_500_c467cf188d_be11008434_b13a422294.webp" alt="">
+        </div>
+    </div>
+
+
+
+    <div class="carousel-7">
+        <div class="carousel-text-7">
+            <h1>POS Service</h1>
+            <p>Launch your business on the Payforce network, start earning extra income and accepting payments from anywhere.</p>
+            <button class="btn-7">Learn More</button>
+            <img src="fairmoney images/POS_5_1_bf721bdde0.png" alt="">
+        </div>
+
+       
+    </div>
+
+    
+    
+   
+</div>
+<div class="carousel-btn">
+    <button class="carousel-btn-next"><</button>
+<button class="carousel-btn-previous">></button>
+
+</div>
+
+</div>  
+</div>
+
+<script>const carousel = document.querySelector('.carousel');
+    const nextBtn = document.querySelector('.carousel-btn-next');
+    const prevBtn = document.querySelector('.carousel-btn-previous');
+    
+    nextBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+    
+    prevBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+    
+    </script>
+
+
+<div class="check">
+    <h1>Check out FairMoney's Referral Program for exciting rewards</h1> <button class="c-btn">
+        Explore Rewards</button>
+</div>
+
+
+<div class="our"><p>OUR INVESTORS</p></div>
+<div class="new">
+    
+       <div class="new-1"> <img src="fairmoney images/DST_Global_d6b41cc69c.webp" alt=""></div>
+        <div class="new-2"><img src="fairmoney images/Flourish_3dc21bde07.webp" alt=""></div>
+        <div class="new-3"><img src="fairmoney images/newfund_3fa515a414.webp" alt=""></div>
+        <div class="new-4"><img src="fairmoney images/Speedinvest_042cd3aad7.webp" alt=""></div>
+        
+        <div class="new-5"><img src="fairmoney images/e3aa08b0542519e9_c87cdd3fe4.webp" alt="">
+        </div>     </div>
+
+
+        <div class="test"><div class="testy">
+            <h1>Testimonials</h1>
+        </div>
+
+        <div class="thetest">
+            <div class="list">
+                <div class="list-1">
+                    <h1>Omolara Gbademosi <img src="fairmoney images/" alt="">
+                    </h1>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+
+
+
+
+
+
+ 
+    
+</body>
+</html>
