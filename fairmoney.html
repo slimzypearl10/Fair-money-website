@@ -148,12 +148,12 @@
         <p>A customer base of over 5 million is a testament to the growing adoption of FairMoney's fintech solutions among Nigerians.</p>
     </div>
 
-    <button class="box-1">
+    <div class="box-1">
         <p>APP DOWNLOADS</p>
         <h1>20</h1>
         <h2>MILLION+</h2>
         <img src="fairmoney images/apps-download__purple line.svg" alt="">
-    </button>
+    </div>
 
 
     <button class="box-2">
@@ -285,25 +285,51 @@
 </div>
 <div class="carousel-btn">
     <button class="carousel-btn-next"><</button>
-<button class="carousel-btn-previous">></button>
+<button class="carousel-btn-prev">></button>
 
 </div>
 
 </div>  
 </div>
 
-<script>const carousel = document.querySelector('.carousel');
-    const nextBtn = document.querySelector('.carousel-btn-next');
-    const prevBtn = document.querySelector('.carousel-btn-previous');
-    
-    nextBtn.addEventListener('click', () => {
-        carousel.scrollBy({ left: 300, behavior: 'smooth' });
-    });
-    
-    prevBtn.addEventListener('click', () => {
-        carousel.scrollBy({ left: -300, behavior: 'smooth' });
-    });
-    
+<script>const track = document.querySelector('.carousel');
+const prevButton = document.querySelector('.carousel-btn-prev');
+const nextButton = document.querySelector('.carousel-btn-next');
+const slides = Array.from(track.children);
+const slideWidth = slides[0].getBoundingClientRect().width;
+
+// Arrange slides side by side
+slides.forEach((slide, index) => {
+    slide.style.left = `${slideWidth * index}px`;
+});
+
+let currentIndex = 0;
+
+// Function to move to a specific slide
+const moveToSlide = (index) => {
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+};
+
+// Move to the next slide
+nextButton.addEventListener('click', () => {
+    if (currentIndex === slides.length - 1) {
+        currentIndex = 0; // Loop back to the start
+    } else {
+        currentIndex++;
+    }
+    moveToSlide(currentIndex);
+});
+
+// Move to the previous slide
+prevButton.addEventListener('click', () => {
+    if (currentIndex === 0) {
+        currentIndex = slides.length - 1; // Loop to the last slide
+    } else {
+        currentIndex--;
+    }
+    moveToSlide(currentIndex);
+});
+
     </script>
 
 
@@ -315,34 +341,292 @@
 
 <div class="our"><p>OUR INVESTORS</p></div>
 <div class="new">
-    
-       <div class="new-1"> <img src="fairmoney images/DST_Global_d6b41cc69c.webp" alt=""></div>
-        <div class="new-2"><img src="fairmoney images/Flourish_3dc21bde07.webp" alt=""></div>
-        <div class="new-3"><img src="fairmoney images/newfund_3fa515a414.webp" alt=""></div>
-        <div class="new-4"><img src="fairmoney images/Speedinvest_042cd3aad7.webp" alt=""></div>
-        
+    <div class=" pin">
+        <div class="new-1"> <img src="fairmoney images/DST_Global_d6b41cc69c.webp" alt=""></div>
+         <div class="new-2"><img src="fairmoney images/Flourish_3dc21bde07.webp" alt=""></div></div>
+      <div class="pat">  <div class="new-3"><img src="fairmoney images/newfund_3fa515a414.webp" alt=""></div>
+      <div class="new-4"><img src="fairmoney images/Speedinvest_042cd3aad7.webp" alt=""></div>
+       </div>
         <div class="new-5"><img src="fairmoney images/e3aa08b0542519e9_c87cdd3fe4.webp" alt="">
-        </div>     </div>
+        </div>   
+      </div>
 
 
-        <div class="test"><div class="testy">
+
+
+
+
+
+
+       <div class="test"><div class="testy">
             <h1>Testimonials</h1>
         </div>
 
-        <div class="thetest">
-            <div class="list">
-                <div class="list-1">
-                    <h1>Omolara Gbademosi <img src="fairmoney images/" alt="">
-                    </h1>
-                </div>
+
+
+ 
+          <div class="testimonial-container">
+           
+          <div class="cat">  <div class="buttons">
+            <button class="button" onclick="showTestimonial(1)">Omolara Gbademosi <img src="fairmoney images/gray-icon - Copy.svg" alt=""></button>
+            <button class="button" onclick="showTestimonial(2)">Cheta Odigbo n<img src="fairmoney images/gray-icon - Copy.svg" alt=""></button>
+            <button class="button" onclick="showTestimonial(3)">Sarah Ladipo <img src="fairmoney images/gray-icon - Copy.svg" alt="">
+            </button>
+
+            <button class="button" onclick="showTestimonial(2)">Udeme Udoh  <img src="fairmoney images/gray-icon - Copy.svg" alt=""></button>
+          </div></div>
+
+          <!-- <div id="carrys" class="carrys"> hi</div> -->
+
+          <div id="testimonial" class="testimonial"> </div>
+          </div>
+
+
+          <script>
+            const carry = {
+                1: "Omolara Gbademosi Nurse"
+            };
+
+            function showcarrys(id) {
+              const carrysElement = document.getElementById(' carrys');
+              carryElement.textContent =  carry[id] || "carry not found.";
+            }</script>
+
+
+         
+        
+          <script>
+
+
+
+
+            const testimonials = {
+              1: "When ASUU called off the strike and my daughter was to go back to school, the money I was expecting wasn't forthcoming and my daughter is about to graduate. It's FairMoney loans that helped us. I started a new business in school. It's been going well, but I needed some money to buy things for this season. Can't ask my parents because things are tight. I eventually used FairMoney loans, and my business has been growing.",
+
+
+              2: "account is the free transfer because I do a lot of transfers around salary period. When I'm now balancing my account, it won't balance again because of the transfer charge. Never again. The thing I like is the all-in-one ness. Once money enters my account, I can easily transfer some to FairSave or FairLock. No excuses, no stress of transferring out. Everything is in one place.",
+
+
+
+
+              3: "I remember when I got my first 2% cash back. I thought it was a debit. I wanted to fight. When I realised it was actually a credit, I grinned a lot. It was small, but I liked it. The biggest reason I like your cards is that I can pay for my Netflix comfortably. Before, I used my friend's card. For some reason, my other cards just don't work. Now, I use my FairMoney card conveniently.Quick delivery and top-notch support. Thank you!",
+
+
+              4: "You are my best app presently on my phone. App that gives me daily interest (FairSave), app that gives highest interest on my savings (Fairlock), App that gives me money when am broke (Fairmoney loan), App that gives me discount in my airtime and data purchase. Who dey breath!!! Fairmoney app- making life convenient; is just a click away. I love you and there's nothing you can do about it."
+            };
+        
+            function showTestimonial(id) {
+              const testimonialElement = document.getElementById('testimonial');
+              testimonialElement.textContent = testimonials[id] || "Testimonial not found.";
+            }
+          </script>
+      
+
+
+
+
+
+
+           <div class="latest">
+            <div class="latest-text">
+                <h1>Latest Blogs</h1> <p>In the News</p>
             </div>
-        </div>
+
+            <div class="lat">
+                <div class="late-1">
+                <div class="late-image-1">
+                    <img src="fairmoney images/artboard-4.png" alt="">
+                </div>
+
+                <div class="late-text">
+                    <p style="font-size: 1.3rem; color: #585757dd; margin-top: 2rem; margin-left: 2rem;">January 31, 2023</p>
+                    <h1 style="font-size: 1.8rem; margin-left: 2rem; margin-top: 2rem; font-weight: bolder; ">Differences between a current account & savings account?</h1>
+
+
+                    <p style="margin-top: 2rem; width: 90%; margin-left: 2rem; font-size: 1.3rem; color: #585757dd;">Do you know the difference between a savings account and a current account? I (It's Efe here 👋) ...</p>
+
+                </div>
+
+
+                <button class="late-btn"style="">Learn More</button>
+
+
+                         
+                    </div>
+              
+
+
+           
+                <div class="late-1">
+                <div class="late-image-1">
+                    <img src="fairmoney images/artboard-3.png" alt="">
+                </div>
+
+                <div class="late-text">
+                    <p style="font-size: 1.3rem; color: #585757dd; margin-top: 2rem; margin-left: 2rem;">January 31, 2023</p>
+                    <h1 style="font-size: 1.8rem; margin-left: 2rem; margin-top: 2rem; font-weight: bolder; ">How to get a small business loan in Nigeria</h1>
+
+
+                    <p style="margin-top: 2rem; width: 90%; margin-left: 2rem; font-size: 1.3rem; color: #585757dd;">Have you noticed that everyone has a small or micro business now? From the Iya Bobo that sells dr...</p>
+
+                </div>
+
+
+                <button class="late-btn">Learn More</button>
+
+
+                         
+                    </div>
+
+
+                    <div class="late-1">
+                        <div class="late-image-1">
+                            <img src="fairmoney images/right-way-to-save.png" alt="">
+                        </div>
+        
+                        <div class="late-text">
+                            <p style="font-size: 1.3rem; color: #585757dd; margin-top: 2rem; margin-left: 2rem;">January 31, 2023</p>
+                            <h1 style="font-size: 1.8rem; margin-left: 2rem; margin-top: 2rem; font-weight: bolder; ">Top 5 savings apps in Nigeria with high interest rates - 2023
+                            </h1>
+        
+        
+                            <p style="margin-top: 2rem; width: 90%; margin-left: 2rem; font-size: 1.3rem; color: #585757dd;">Saving money is an essential part of personal finance and can be the key to achieving financial s...
+
+
+
+                            </p>
+        
+                        </div>
+        
+        
+                        <button class="late-btn" style="margin-top: 6rem;">Learn More</button>
+        
+        
+                                 
+                            </div>
+        
+        
+        
+        
+
+
+
+
+                    
+            </div>    
+             
+
+            
+           <div class="foot">
+            <div class="foot-image">
+                <img src="fairmoney images/home.b39e4e5.webp" alt="">
+            </div>
+
+            <div class="foot-text"><h1>Ready to take your finances to the next level?</h1>
+                <div class="foot-app">
+                    <img src="fairmoney images/google-play-badge.svg" alt="">
+                    <img src="fairmoney images/apple-download.svg" alt="">
+                </div>
+                <div class="border"></div>
+                <div class="scan2">
+                    <img src="fairmoney images/WebsiteQR_QR-code (1).jpeg" alt="">
+                    <p>Scan the QR code with your phone camera to download the FairMoney app.</p>
+                </div></div>
+
+           
+           </div>
+
+
+           <footer>
+            <div class="footers">
+
+                <div class="menu-text">
+                    <h1>Menu</h1>
+                </div>
+                <div class="menu">
+                   
+                <div class="row-1">
+                    <p>Home</p>
+                    <p>Our Conmpany</p>
+                    <p>Contact US</p>
+                    <p>FAQ</p>
+                </div>
+
+                <div class="row-2">
+                    <p>FairSave</p>
+                    <P>FairLock</P>
+                    <P>FairTarget</P>
+                    <P>AutoSave</P>
+                    <P>Personal Loans</P>
+                    <P>Business Loans</P>
+                </div>
+
+            <div class="row-3">
+                <p>Bank Account</p>
+                <p>Cards</p>
+                <p>Bills Payment</p>
+            </div>
+
+            <div class="footer-app">
+                <img src="fairmoney images/progate google play.svg" alt="">
+                <img src="fairmoney images/progate app store.svg" alt="">
+            </div>
+
+
+
+                </div>
+                
+                            
+            </div>   
+            
+            <div class="terms">
+                <div class="term-1">
+                    <p>Terms and Conditions
+                    </p>
+
+                    <p>Privacy Policy</p>
+                    <p>Referrals</p>
+                    <p>Whistleblower Policy</p>
+                    <p>FlexiCredit Terms and Conditions</p>
+                    <div class="footer-applogo">
+                        <div class="footer-applogo1">
+                            <img src="fairmoney images/facebook-icon - Copy.svg" alt="">
+                        </div>
+                        <div class="footer-applogo2">
+                            <img src="fairmoney images/twitter-icon - Copy.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="term-2">
+                    <p>All rights reserved. © 2024 FairMoney</p>
+                </div>
+               </div>
+           </footer>
+
+
+       
+
+
+           
+           
+
+
+            
+            
+          
+
+
+
+
+
+ 
+
     
-    </div>
 
 
 
-
+ 
 
 
 
